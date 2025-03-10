@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id=left-bar>
+        <p class="text1" id="userName-Text">Username</p>
+        <p class="text1" id="money">Money: $0.00</p>
+        <p class="text1" id="level" >Level: 1</p>
+        <div id="mine" onclick = "minePage()"><p id="page-select">Mine</p></div>
+        <div id="shop" onclick = "shopPage()"><p id="page-select">Shop</p></div>
+        <div id="inventory" onclick = "inventoryPage()"><p id="page-select">Inventory</p></div>
+        <div id="bet" onclick = "bettingPage()"><p id="page-select">Betting</p></div>
+        <div id="upgrade" onclick = "upgradePage()"><p id="page-select">Upgrade</p></div>
+      </div>
+
+      <!-- Sign-Up -->
+
+      <div id="background-sign">
+
+        <div id="login-title-center">
+          <p id="login-title">Sign-Up</p>
+        </div>
+
+        <div id="log-box">
+          <div id = username-text-container>
+            <h1 id = "username-text">Username:</h1>
+          </div>
+          <div contenteditable="true" id = username-input-signup></div>
+
+          <div id = password-text-container>
+            <h1 id = "password-text">Password:</h1>
+          </div>
+          <div contenteditable="true" id = password-input-signup></div>
+          <div onclick = "signUp()" id = "login-finish-background"><p id="sign-finish">Sign-Up</p></div>
+          <div onclick = "loginSwitch()" id = "switch-to-login-background"><p id="no-account">Already Have An Account? Log In Here</p></div>
+
+        </div>
+      </div>
+
+      <!-- End of Sign-Up -->
+
+      <!-- Login -->
+
+      <div id="background-log">
+
+        <div id="login-title-center">
+          <p id="login-title">Login</p>
+        </div>
+
+        <div id="log-box">
+          <div id = username-text-container>
+            <h1 id = "username-text">Username:</h1>
+          </div>
+          <div contenteditable="true" id = username-input-login></div>
+
+          <div id = password-text-container>
+            <h1 id = "password-text">Password:</h1>
+          </div>
+          <div contenteditable="true" id = password-input-login></div>
+          <div onclick = "loginPress()" id = "login-finish-background"><p id="login-finish">Login</p></div>
+          <div onclick = "signSwitch()" id = "no-account-background"><p id="no-account">No Account? Create Account Here</p></div>
+
+        </div>
+
+        <div id="need-to-create">
+          <p id="invalid">Username or Password Invalid</p>
+        </div>
+
+      </div>
+
+      <!-- End of Login -->
+
+      <!-- Pages -->
+      <div class="main-bar" id="mine-page">
+        <div id="health-bar">
+          <p id="block-health-text">Block Health: 10/10</p>
+        </div>
+          <img onclick="blockPress()" id= "block-click" width="300px" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSv1HotHXG6ek8yWdDNl2yzhSlBrN60rmdwCyxxiLTqAArDffNQiwXiYm4ZlAI2bUllqaZ4lXlcKgat5XInIUE7BsukXA=s1600" />
+
+
+      </div>
+
+      <div class="main-bar" id="shop-page">
+        <h2 id="inventory-title">Shop</h2>
+        <img onclick = "openCase()" id="chest" src="https://steamuserimages-a.akamaihd.net/ugc/940581010214243012/9DC562BE51FB09AC78F0180DC0BFA0928D92CD6C/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+        <p id="chest-text">Cost: $20.00</p>
+      <button id="open" onclick = "openCase()" style="display: none">Open Case</button>
+      </div>
+
+      <div class="main-bar" id="inventory-page">
+
+        <div id="animal-images">
+              <h2 id="inventory-title">Earned Items</h2>
+              <div id="random-animals" class="animal-grid">
+              </div>
+          </div>
+
+      </div>
+
+      <div class="main-bar" id="betting-page">
+        <div id="coinFlip" onclick = "coinFlipPage()"><p id="page-select">Coin Flip</p></div>
+      </div>
+
+      <div class="main-bar" id="coin-flip-page">
+        <img onclick = "heads()" id="heads" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYS74yd_tULdBU6E4E12aZfZuF6SauzggE5PJjef5QIix-GcUZCNUvc3lYudZm9RE5daaPN6FHCEyYiXGY1hLU6Z6aVb=s1600">
+        <img onclick = "tails()" id="tails" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSdxDvdxy_Zh_7ayXoX0aADsSpejExnbiO84IBYg2ILVGhLJdGwxL_axHCuLY-368QVTkjL0ejtM4qJtwVIsX14c4iswA=s1600">
+        <p id="coinflip-w-title">Win</p>
+        <p id="coinflip-l-title">Loss</p>
+        <div id="coinFlip-action-l" onclick = "headsClick()"><p id="page-select">Heads</p></div>
+        <div id="coinFlip-action-r" onclick = "tailsClick()"><p id="page-select">Tails</p></div>
+        <div id="coinFlip-action-type-label">How Much Do You Want To Bet?</div>
+        <div id="coinFlip-action-type" contenteditable="true"></div>
+        <div id="coinFlip-action-claiml" onclick = "claimClick()"><p id="page-select">Accept Loss</p></div>
+        <div id="coinFlip-action-claimw" onclick = "claimClick()"><p id="page-select">Accept Win</p></div>
+      </div>
+
+      <div class="main-bar" id="upgrade-page">
+        <div id="upgradeDMG" onclick = "upgradeDMGfunction()"><p id="upgradeDMG-text">Cost: $5.00. Increase click damage. Current: 1.0x</p></div>
+      </div>
+
+      <!-- End of Pages -->
+
+      <div id="backgroundc">
+        <div id="item-center">
+          <p id="item"></p>
+        </div>
+        <div id="itemimg">
+          <img id="itemPNG" src="https://static.wixstatic.com/media/34c645_76c61ebe1c994480b663325af243551c.png/v1/fill/w_705,h_435,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/34c645_76c61ebe1c994480b663325af243551c.png">
+        </div>
+        <div onclick = "claim()" id = "claimback"><p id="claim">Claim</p></div>
+      <!--   <button id="claim" onclick = "claim()">Claim</button> -->
+      </div>
+
+
+      </div>
+      <script src="script.js">
+      </script>
+</body>
+</html>
