@@ -1,0 +1,1009 @@
+#backgroundc {
+    position: absolute;
+    z-index:1;
+    background-color: #1C1E22;
+    height: 105%;
+    width: 105%;
+    margin:-10px;
+    /* display:none; */
+  }
+
+
+  html{
+    overflow: hidden;
+    background-color: #1C1E22;
+  }
+
+  button{
+    display: block;
+    margin-left: 8px;
+
+  }
+
+  /* ############################################################*/
+
+  #itemimg{
+    width: 300px;
+    height:300px;
+    margin-top: 10px;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid black;
+    border-radius: 20px;
+    animation: fade 2s ease-in-out forwards;
+  }
+
+  #itemPNG{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+  }
+
+
+  #left-bar{
+    position: absolute;
+    background-color: rgb(20, 21, 25);
+    width:15%;
+    height: 105%;
+    margin:-10px;
+  }
+  .main-bar{
+    position: absolute;
+    background-color: #1C1E22;;
+    left: 15%;
+    width:85%;
+    height: 105%;
+    margin:-10px;
+  }
+
+  #chest{
+    position: absolute;
+    width: 100px;
+    height:100px;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px 1px green;
+  }
+
+  #chest:hover{
+    cursor: pointer;
+  }
+
+  #chest-text{
+    position: absolute;
+    font-size: 1em;
+    user-select: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid black;
+    box-shadow: 0 0 10px 1px green;
+  }
+
+  #claim{
+    width:auto;
+    color: white;
+    user-select: none;
+  }
+
+  #claimback{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 80%;
+    left: 50%;
+    width: 100px;
+    /* height: 50px; */
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+  /*   animation: fade 2s ease-in-out forwards; */
+  }
+
+  #claimback:hover{
+    animation: hoverExpand 0.5s ease-in-out forwards;
+    cursor: pointer;
+  }
+
+  #item{
+    font-size: 3em;
+  }
+
+  #item-center{
+    animation: reveal 2s ease-in-out forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #mine{
+    position: absolute;
+    left: 20%;
+    top: 22%;
+    width: 60% ;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #1C1E22;
+    box-shadow: 0 0 10px 1px grey;
+    transition: scale 0.5s ease;
+  }
+  #mine:hover{
+  animation: hoverExpand1 0.5s ease-in-out forwards;
+    cursor: pointer;
+  }
+
+  #shop{
+    position: absolute;
+    left: 20%;
+    top: 37%;
+    width: 60% ;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #1C1E22;
+    box-shadow: 0 0 10px 1px grey;
+    transition: scale 0.5s ease
+  }
+  #shop:hover{
+  animation: hoverExpand1 0.5s ease-in-out forwards;
+    cursor: pointer;
+  }
+
+  #inventory{
+    position: absolute;
+    left: 20%;
+    top: 52%;
+    width: 60% ;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #1C1E22;
+    box-shadow: 0 0 10px 1px grey;
+    transition: scale 0.5s ease
+  }
+  #inventory:hover{
+    animation: hoverExpand1 0.5s ease-in-out forwards;
+    cursor: pointer;
+
+  }
+
+  #bet{
+    position: absolute;
+    left: 20%;
+    top: 67%;
+    width: 60% ;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #1C1E22;
+    box-shadow: 0 0 10px 1px grey;
+    transition: scale 0.5s ease
+  }
+  #bet:hover{
+  animation: hoverExpand1 0.5s ease-in-out forwards;
+    cursor: pointer;
+  }
+
+  #coinFlip{
+    position: absolute;
+    left: 40%;
+    top: 37%;
+    width: 20% ;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #1C1E22;
+    box-shadow: 0 0 10px 1px grey;
+    transition: scale 0.5s ease
+  }
+  #coinFlip:hover{
+  animation: hoverExpand1 0.5s ease-in-out forwards;
+    cursor: pointer;
+  }
+
+  #coinflip-w-title{
+    margin-top: 3%;
+    font-size: 5em;
+    text-shadow: 0px 0px 5px green, 0px 0px 10px green, 0px 0px 15px green, 0px 0px 20px green, 0px 0px 30px green, 0px 0px 40px green, 0px 0px 55px green, 0px 0px 75px green;
+    text-align:center;
+    display: none;
+  }
+
+
+  #coinflip-l-title{
+    margin-top: 3%;
+    font-size: 5em;
+    text-shadow: 0px 0px 5px red, 0px 0px 10px red, 0px 0px 15px red, 0px 0px 20px red, 0px 0px 30px red, 0px 0px 40px red, 0px 0px 55px red, 0px 0px 75px red;
+    text-align:center;
+    display: none;
+  }
+
+
+
+  #coinFlip-action-l{
+    position: absolute;
+    left: 25%;
+    top: 60%;
+    width: 10% ;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #1C1E22;
+    box-shadow: 0 0 10px 1px grey;
+    transition: scale 0.5s ease
+  }
+  #coinFlip-action-l:hover{
+  animation: hoverExpand1 0.5s ease-in-out forwards;
+    cursor: pointer;
+  }
+
+  #coinFlip-action-type-label{
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    width: 20% ;
+    height: 3%;
+    border-radius: 10px;
+    background-color: #1C1E22;
+    box-shadow: 0 0 10px 1px grey;
+    transition: scale 0.5s ease;
+    color: white;
+    font-size:1em;
+    text-align:center;
+
+  }
+
+  #coinFlip-action-type{
+    position: absolute;
+    left: 45%;
+    top: 67%;
+    width: 10% ;
+    height: 3%;
+    border-radius: 10px;
+    background-color: #1C1E22;
+    box-shadow: 0 0 10px 1px grey;
+    transition: scale 0.5s ease;
+    color: white;
+    font-size:1.2em;
+  }
+
+  #coinFlip-action-type:hover{
+    cursor: text
+  }
+
+  #coinFlip-action-r{
+    position: absolute;
+    left: 65%;
+    top: 60%;
+    width: 10% ;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #1C1E22;
+    box-shadow: 0 0 10px 1px grey;
+    transition: scale 0.5s ease
+  }
+  #coinFlip-action-r:hover{
+  animation: hoverExpand1 0.5s ease-in-out forwards;
+    cursor: pointer;
+  }
+
+  #coinFlip-action-claimw{
+    position: absolute;
+    left: 45%;
+    top: 80%;
+    width: 10% ;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #1C1E22;
+    box-shadow: 0 0 10px 1px grey;
+    transition: scale 0.5s ease;
+    display: none;
+  }
+
+  #coinFlip-action-claimw:hover{
+  animation: hoverExpand1 0.5s ease-in-out forwards;
+    cursor: pointer;
+  }
+
+  #coinFlip-action-claiml{
+    position: absolute;
+    left: 45%;
+    top: 80%;
+    width: 10% ;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #1C1E22;
+    box-shadow: 0 0 10px 1px grey;
+    transition: scale 0.5s ease;
+    display: none;
+  }
+
+  #coinFlip-action-claiml:hover{
+  animation: hoverExpand1 0.5s ease-in-out forwards;
+    cursor: pointer;
+  }
+
+  #coinFlip-action-claim:hover{
+  animation: hoverExpand1 0.5s ease-in-out forwards;
+    cursor: pointer;
+  }
+
+  #upgrade{
+    position: absolute;
+    left: 20%;
+    top: 82%;
+    width: 60% ;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #1C1E22;
+    box-shadow: 0 0 10px 1px grey;
+    transition: scale 0.5s ease
+  }
+  #upgrade:hover{
+  animation: hoverExpand1 0.5s ease-in-out forwards;
+    cursor: pointer;
+  }
+
+  #upgradeDMG{
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    width: 60% ;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #1C1E22;
+    box-shadow: 0 0 10px 1px grey;
+    transition: scale 0.5s ease
+  }
+  #upgradeDMG:hover{
+  animation: hoverExpand1 0.5s ease-in-out forwards;
+    cursor: pointer;
+  }
+
+  #upgradeDMG-text{
+    text-align:center;
+    user-select: none;
+    font-size:1.2vw;
+    margin:0px;
+    color: white;
+    line-height: 60px
+  }
+
+  .page-select{
+    text-align:center;
+    user-select: none;
+    font-size:1.2vw;
+    margin:0px;
+    color: white;
+    line-height: 60px;
+    text-decoration: none;
+  }
+
+  .text1{
+    text-align:center;
+    user-select: none;
+    font-size:1.1vw;
+    margin:0px;
+    color: white;
+    margin-top: 10%;
+  }
+
+  /* Pages */
+  #mine-page{
+  }
+
+  #health-bar{
+    position:absolute;
+    width: 20%;
+    height: 10%;
+    top:10%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: green;
+    border: 5px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px green, 0px 0px 10px green, 0px 0px 15px green, 0px 0px 20px green, 0px 0px 30px green, 0px 0px 40px green, 0px 0px 55px green, 0px 0px 75px green;
+  }
+
+  #block-click{
+    box-shadow: 0px 0px 5px green, 0px 0px 10px green, 0px 0px 15px green, 0px 0px 20px green, 0px 0px 30px green, 0px 0px 40px green, 0px 0px 55px green, 0px 0px 75px green;
+    border: 5px solid black;
+    border-radius: 5px;
+
+  }
+
+  #block-health-text{
+    text-align:center;
+    user-select: none;
+    font-size:1.4vw;
+    margin:0px;
+    color: black;
+    margin-top:8%
+  }
+
+  #shop-page{
+    background-color: #1C1E22;
+    display:none;
+  }
+
+  #inventory-page{
+    background-color: #1C1E22;
+    display:none;
+  }
+
+  #betting-page{
+    background-color: #1C1E22;
+    display:none;
+  }
+
+  #coin-flip-page{
+    background-color: #1C1E22;
+    display:none;
+  }
+
+  #heads{
+    position: absolute;
+    top: 25%;
+    left: 22.5%;
+    width: 200px;
+  }
+
+  #tails{
+    position: absolute;
+    top: 25%;
+    left: 62.5%;
+    width: 200px;
+  }
+
+  #upgrade-page{
+    background-color: #1C1E22;
+    display:none;
+  }
+  /* End of Pages */
+
+  /* Login */
+
+
+
+  /* ################################################# */
+  /* ################################################# */
+  /* ################################################# */
+          #background-log {
+            position: absolute;
+            z-index:1;
+            background-color: #1C1E22;
+            height: 105%;
+            width: 105%;
+            margin:-10px;
+            display: display;
+          }
+  /* ################################################# */
+  /* ################################################# */
+  /* ################################################# */
+
+  #log-box {
+    position: absolute;
+    top:50%;
+    left:50%;
+    height:50%;
+    width: 0;
+    padding-left: 20%;;
+    transform: translate(-50%, -50%);
+    border: 5px solid black;
+    border-radius: 20px;
+    animation: fade 2s ease-in-out forwards;
+    background-color: green;
+    box-shadow: 0 0 50px 15px green;
+  }
+
+  #need-to-create {
+    position: absolute;
+    top:85%;
+    left:50%;
+    height:50%;
+    width: 20%;
+    height:30px;
+    padding-left: 0%;
+    transform: translate(-50%, -50%);
+    border: 3px solid red;
+    border-radius: 20px;
+    animation: fade 1s ease-in-out forwards;
+    background-color: #ED8C8C;
+    box-shadow: 0 0 50px 15px #ED8C8C;
+    display: none;
+  }
+
+  #invalid{
+    position:absolute;
+    font-size: 1.2em;
+    color: red;
+    overflow: hidden;
+    text-align: center;
+    top:-15px;
+    left:12%;
+  }
+
+  /* End of Login */
+
+  #username-input-login{
+    position: absolute;
+    background-color: white;
+    width: 80%;
+    height: 15%;
+    top: 20%;
+    left:10%;
+    border-radius: 5px;
+    border: 3px solid black;
+    opacity:0.8;
+    font-size: 3em;
+  }
+
+  #password-input-login{
+    position: absolute;
+    background-color: white;
+    width: 80%;
+    height: 15%;
+    top: 55%;
+    left:10%;
+    border-radius: 5px;
+    border: 3px solid black;
+    opacity:0.8;
+    font-size: 3em;
+  }
+
+  #username-input-signup{
+    position: absolute;
+    background-color: white;
+    width: 80%;
+    height: 15%;
+    top: 20%;
+    left:10%;
+    border-radius: 5px;
+    border: 3px solid black;
+    opacity:0.8;
+    font-size: 3em;
+  }
+
+  #password-input-signup{
+    position: absolute;
+    background-color: white;
+    width: 80%;
+    height: 15%;
+    top: 55%;
+    left:10%;
+    border-radius: 5px;
+    border: 3px solid black;
+    opacity:0.8;
+    font-size: 3em;
+  }
+
+  #username-text{
+    text-align:center;
+    user-select: none;
+    font-size:2.3vw;
+    margin:0px;
+    color: white;
+  }
+
+  #username-text-container{
+    position: absolute;
+    width: 80%;
+    height: 15%;
+    top: 5%;
+    left:10%;
+    text-align: center;
+  }
+
+  #password-text-container{
+    position: absolute;
+    width: 80%;
+    height: 15%;
+    top: 38%;
+    left:10%;
+    text-align:center;
+  }
+
+  #password-text{
+    text-align:center;
+    user-select: none;
+    font-size:2.3vw;
+    margin:0px;
+    color: white;
+  }
+
+  #item{
+    font-size: 3em;
+  }
+
+  #item-center{
+    animation: reveal 2s ease-in-out forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #login-title{
+    font-size: 3em;
+    text-shadow: 0px 0px 5px green, 0px 0px 10px green, 0px 0px 15px green, 0px 0px 20px green, 0px 0px 30px green, 0px 0px 40px green, 0px 0px 55px green, 0px 0px 75px green
+  }
+
+  #login-title-center{
+    animation: reveal 2s ease-in-out forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #login-finish{
+    text-align:center;
+    color: black;
+    user-select: none;
+    font-size:2vw;
+    margin:0px
+  }
+
+  #sign-finish{
+    text-align:center;
+    color: black;
+    user-select: none;
+    font-size:2vw;
+    margin:0px
+  }
+
+  #login-finish-background{
+    position: absolute;
+    width: 60%;
+    min-height: 10%;
+    top: 78%;
+    left:20%;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: white;
+    opacity:0.8;
+  }
+
+  #login-finish-background:hover{
+    cursor: pointer;
+  }
+
+  #no-account{
+    text-align:center;
+    user-select: none;
+    font-size:1vw;
+    margin:0px;
+    color: white;
+  }
+
+  #no-account-background{
+    position: absolute;
+    width: 160%;
+    height: 8%;
+    top: 92%;
+    left:-30%;
+    opacity:0.8;
+    text-align:center;
+  }
+
+  #no-account-background:hover{
+    cursor: pointer
+  }
+
+  #switch-to-login-background{
+    position: absolute;
+    width: 230%;
+    height: 8%;
+    top: 92%;
+    left:-65%;
+    opacity:0.8;
+    text-align:center;
+  }
+
+  #switch-to-login-background:hover{
+    cursor: pointer
+  }
+
+  #background-sign {
+    position: absolute;
+    z-index:1;
+    background-color: #1C1E22;
+    height: 105%;
+    width: 105%;
+    margin:-10px;
+    display: none;
+  }
+
+  #block-click{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:20%;
+  }
+
+  #block-click:hover{
+    cursor: pointer
+  }
+
+  #inventory-title{
+    color: white;
+    text-align: center;
+    font-size: 2em
+  }
+
+
+  /* Animations */
+  @keyframes clickb{
+    0%{
+      transform: scale(1) translate(-50%, -50%);
+    }
+    50%{
+      transform: scale(1.02) translate(-50%, -50%);
+    }
+    100%{
+      transform: scale(1) translate(-50%, -50%);
+    }
+  }
+
+  @keyframes fadeInAndOut{
+    0%{
+      opacity:1;
+    }
+    50%{
+      opacity:0;
+    }
+    100%{
+      opacity:1;
+    }
+  }
+
+  @keyframes reveal{
+    0%{
+      transform: scale(0.1)
+    }
+    100%{
+      transform: scale(1.1) rotate(360deg)
+    }
+  }
+
+  @keyframes fade{
+    0%{
+      opacity:0
+    }
+    100%{
+      opacity:1
+    }
+  }
+
+  @keyframes hoverExpand{
+    0%{
+      transform: scale(1) translate(-50%, -50%);
+    }
+    100%{
+      transform: scale(1.1) translate(-45%, -45%);
+    }
+  }
+
+  @keyframes hoverExpand1{
+    0%{
+      transform: scale(1)
+    }
+    100%{
+      transform: scale(1.05)
+    }
+  }
+
+  @keyframes loss{
+    0%{
+      transform: scale(1)
+    }
+    20%{
+      transform: scale(0.2)
+    }
+    40%{
+      transform: scale(1)
+    }
+    60%{
+      transform: scale(0.2)
+    }
+    80%{
+    transform: scale(1)
+    }
+    100%{
+    transform: scale(0.2)
+    }
+  }
+
+  @keyframes win{
+    0%{
+      transform: scale(0.2)
+    }
+    20%{
+      transform: scale(1)
+    }
+    40%{
+      transform: scale(0.2)
+    }
+    60%{
+      transform: scale(1)
+    }
+    80%{
+    transform: scale(0.2)
+    }
+    100%{
+    transform: scale(1)
+    }
+  }
+
+
+
+
+  #userName-Text{
+    text-align:center;
+    user-select: none;
+    font-size:2vw;
+    margin:0px;
+    color: white;
+    margin-top: 10px;
+  }
+
+
+  div#animal-images {
+    margin-left: 15%;
+    width: 85%;
+    overflow: hidden;
+    /* background-color: red; */
+  }
+
+          div.animal-grid {
+              width: 100%;
+              display: grid;
+              grid-template-columns: repeat(10, 1fr);
+              overflow: hidden;
+              gap: 35px;
+              padding: 5px;
+              /* align-items: start;
+              justify-content: center; */
+          }
+div.animal-grid img {
+  width: 5vw;
+  height: 5vw;
+  object-fit: cover;
+  object-position: top;
+  border: 5px solid black;
+  border-radius: 5px;
+  /* background-color: green; */
+}
+  .delete-button {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 16px;
+    border:2px solid black;
+    cursor: pointer;
+  }
+/* #######New Styles########### */
+.home-title {
+  color: white;
+  text-align: center;
+}
+
+.commonIMG{
+  background-color: grey;
+  box-shadow: 0 0 50px 15px grey;
+}
+
+.commonClaim{
+  background-color: grey;
+  box-shadow: 0 0 50px 5px grey;
+}
+
+.commonClaimText{
+  color: black;
+  text-shadow:
+    0px 0px 5px grey,
+    0px 0px 10px grey,
+    0px 0px 15px grey,
+    0px 0px 20px grey,
+    0px 0px 30px grey,
+    0px 0px 40px grey,
+    0px 0px 55px grey,
+    0px 0px 75px grey;
+}
+
+.uncommonIMG{
+  background-color: green;
+  box-shadow: 0 0 50px 15px green;
+}
+
+.uncommonClaim{
+  background-color: green;
+  box-shadow: 0 0 50px 5px green;
+}
+
+.uncommonClaimText{
+  color: black;
+  text-shadow:
+    0px 0px 5px green,
+    0px 0px 10px green,
+    0px 0px 15px green,
+    0px 0px 20px green,
+    0px 0px 30px green,
+    0px 0px 40px green,
+    0px 0px 55px green,
+    0px 0px 75px green;
+}
+
+.rareIMG{
+  background-color: blue;
+  box-shadow: 0 0 50px 15px blue;
+}
+
+.rareClaim{
+  background-color: blue;
+  box-shadow: 0 0 50px 5px blue;
+}
+
+.rareClaimText{
+  color: black;
+  text-shadow:
+    0px 0px 5px blue,
+    0px 0px 10px blue,
+    0px 0px 15px blue,
+    0px 0px 20px blue,
+    0px 0px 30px blue,
+    0px 0px 40px blue,
+    0px 0px 55px blue,
+    0px 0px 75px blue;
+}
+
+.epicIMG{
+  background-color: purple;
+  box-shadow: 0 0 50px 15px purple;
+}
+
+.epicClaim{
+  background-color: purple;
+  box-shadow: 0 0 50px 5px purple;
+}
+
+.epicClaimText{
+  color: black;
+  text-shadow:
+    0px 0px 5px purple,
+    0px 0px 10px purple,
+    0px 0px 15px purple,
+    0px 0px 20px purple,
+    0px 0px 30px purple,
+    0px 0px 40px purple,
+    0px 0px 55px purple,
+    0px 0px 75px purple;
+}
+
+.legendaryIMG{
+  background-color: orange;
+  box-shadow: 0 0 50px 15px orange;
+}
+
+.legendaryClaim{
+  background-color: orange;
+  box-shadow: 0 0 50px 5px orange;
+}
+
+.legendaryClaimText{
+  color: black;
+  text-shadow:
+    0px 0px 5px orange,
+    0px 0px 10px orange,
+    0px 0px 15px orange,
+    0px 0px 20px orange,
+    0px 0px 30px orange,
+    0px 0px 40px orange,
+    0px 0px 55px orange,
+    0px 0px 75px orange;
+}
+
+.hidden{
+  display: none;
+}
+
